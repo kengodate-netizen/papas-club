@@ -1,0 +1,25 @@
+{
+  "status": "ok",
+  "feed": {
+    "url": "https://note.com/lush_willet4703/rss",
+    "title": "Papasclub",
+    "link": "https://note.com/lush_willet4703",
+    "author": "",
+    "description": "Papas clubのお知らせを発信します",
+    "image": ""
+  },
+  "items": [
+    {
+      "title": "ホームページ作成",
+      "pubDate": "2026-04-01 06:55:49",
+      "link": "https://note.com/lush_willet4703/n/n0121faf44ea7",
+      "guid": "https://note.com/lush_willet4703/n/n0121faf44ea7",
+      "author": "",
+      "thumbnail": "",
+      "description": "\n<p name=\"ebeefb78-a4b2-417b-87a6-55a54cbaecca\">新しくホームページを開設しました。</p>\n<br><a href=\"https://note.com/lush_willet4703/n/n0121faf44ea7\">続きをみる</a>\n",
+      "content": "\n<p name=\"ebeefb78-a4b2-417b-87a6-55a54cbaecca\">新しくホームページを開設しました。</p>\n<br><a href=\"https://note.com/lush_willet4703/n/n0121faf44ea7\">続きをみる</a>\n",
+      "enclosure": {},
+      "categories": []
+    }
+  ]
+}

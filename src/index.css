@@ -1,0 +1,23 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@layer base {
+  :root {
+    --footer-wood-url: url('https://images.unsplash.com/photo-1546484396-fb3fc6f95f98?q=80&w=2000&auto=format&fit=crop');
+    /* Previous wood texture for footer */
+    --body-wood-url: url('/wood-bg.jpg?v=5');
+    /* Locally saved wood texture (with cache buster) */
+  }
+
+  body {
+    @apply bg-background text-black font-sans;
+    background-image: var(--body-wood-url);
+    /* Removed white overlay to ensure grain is visible */
+    background-size: cover;
+    background-attachment: fixed;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
