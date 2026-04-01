@@ -1,8 +1,0 @@
-{
-  "rewrites": [
-    {
-      "source": "/api/note",
-      "destination": "https://note.com/api/v2/creators/lush_willet4703/contents?kind=note"
-    }
-  ]
-}
