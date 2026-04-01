@@ -42,9 +42,8 @@ const Access = () => {
                                     <div>
                                         <h4 className="font-bold text-black mb-1">営業時間</h4>
                                         <div className="text-black/80 space-y-1">
-                                            <p><span className="inline-block w-16">平日：</span> 10:00 〜 18:00</p>
-                                            <p><span className="inline-block w-16">土日祝：</span> 09:00 〜 17:00</p>
-                                            <p className="text-sm text-accent-dark mt-2 font-medium">※ 定休日：年末年始・お盆休み</p>
+                                            <p><span className="inline-block w-24 font-bold">平日・祝日：</span> 09:00 〜 18:00</p>
+                                            <p className="text-sm text-accent-dark mt-2 font-medium">※ 休業日：土曜日・日曜日・年末年始・お盆休み</p>
                                         </div>
                                     </div>
                                 </div>
