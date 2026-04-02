@@ -4,7 +4,8 @@ import { Send, Phone, CheckCircle, AlertCircle } from 'lucide-react';
 const Contact = () => {
     const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
 
-    const endpoint = import.meta.env.VITE_FORMSPREE_ENDPOINT || 'https://formspree.io/f/xykbdgkd';
+    // Vercel上の古い環境変数が優先されてしまうのを防ぐため、IDを直接指定します
+    const endpoint = 'https://formspree.io/f/xykbdgkd';
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
