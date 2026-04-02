@@ -31,7 +31,7 @@ const Philosophy = () => {
                         また、地域社会ともつながりを持ち、子どもとその家族が孤立せず、悩みを共有できるように、相談や調整の場としても機能することで、子どもと家族が安心して未来に向かって歩めるよう、ともに寄り添う支援を行います。
                     </p>
                     <div className="text-right pt-6 mt-6 border-t border-black/10">
-                        <p className="font-bold text-lg text-secondary-dark">丸山　据</p>
+                        <p className="font-bold text-lg text-secondary-dark">丸谷　据</p>
                     </div>
                 </div>
             </div>
