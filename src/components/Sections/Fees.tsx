@@ -69,7 +69,7 @@ const Fees = () => {
                     <div className="mt-10 p-6 bg-white/30 backdrop-blur-sm rounded-2xl border border-white/40 shadow-sm">
                         <h4 className="font-bold text-accent-dark mb-2">その他にかかる費用について</h4>
                         <ul className="list-disc list-inside text-black/80 space-y-2 text-sm">
-                            <li>おやつ代：1回約 120円</li>
+                            <li>おやつ代：1回120円</li>
                             <li>お出かけ・イベント参加費：実費負担となります</li>
                             <li>創作活動費：実費が発生する場合があります</li>
                         </ul>

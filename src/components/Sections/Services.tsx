@@ -1,5 +1,5 @@
 import React from 'react';
-import { Users, BookOpen, CheckSquare, MessageCircle, Stethoscope, Activity } from 'lucide-react';
+import { Users, BookOpen, CheckSquare, MessageCircle, Activity } from 'lucide-react';
 
 const Services = () => {
     const servicesList = [
@@ -22,11 +22,6 @@ const Services = () => {
             title: "社会性支援\n※SST(ｿｰｼｬﾙｽｷﾙﾄﾚｰﾆﾝｸﾞ)",
             description: "挨拶、適切な断り方、相手の気持ちを推察する練習、公共交通機関の利用マナーなどを学びます。\n社会の中でのコミュニケーションを学び、対人関係のトラブルを減らして円滑に集団生活を送れるよう支援します。",
             icon: <MessageCircle className="w-8 h-8 text-secondary" />
-        },
-        {
-            title: "専門性支援",
-            description: "理学療法士（PT）、作業療法士（OT）、言語聴覚士（ST）、心理士などの国家資格を持つ専門職による、より高度で具体的なアプローチです。\n言葉の遅れ、身体の動かしにくさ、感覚の過敏さなど、特定の課題に対して医学的・心理学的知見からアプローチし、機能改善や環境調整を行います。",
-            icon: <Stethoscope className="w-8 h-8 text-secondary" />
         },
         {
             title: "運動療育",
