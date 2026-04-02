@@ -4,12 +4,12 @@ import { Send, Phone, CheckCircle, AlertCircle } from 'lucide-react';
 const Contact = () => {
     const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
 
-    const endpoint = import.meta.env.VITE_FORMSPREE_ENDPOINT || 'https://formspree.io/f/xoqpkpzw';
+    const endpoint = import.meta.env.VITE_FORMSPREE_ENDPOINT || 'https://formspree.io/f/xykbdgkd';
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         setStatus('submitting');
-        
+
         const form = e.currentTarget;
         const data = new FormData(form);
 
@@ -64,7 +64,7 @@ const Contact = () => {
                         {/* Form */}
                         <div className="bg-white/50 backdrop-blur-sm p-8 rounded-3xl border border-white/60 shadow-lg relative">
                             <h3 className="text-xl font-bold text-black mb-6 text-center">メッセージを送る</h3>
-                            
+
                             {status === 'success' && (
                                 <div className="absolute inset-0 z-20 flex flex-col items-center justify-center bg-white/95 backdrop-blur-md rounded-3xl p-6 text-center animate-in fade-in duration-300">
                                     <CheckCircle className="w-16 h-16 text-green-500 mb-4" />
@@ -73,7 +73,7 @@ const Contact = () => {
                                         お問い合わせありがとうございます。<br />
                                         内容を確認次第、担当者よりご連絡いたします。
                                     </p>
-                                    <button 
+                                    <button
                                         onClick={() => setStatus('idle')}
                                         className="mt-6 px-6 py-2 bg-secondary/10 text-secondary font-bold rounded-full hover:bg-secondary hover:text-white transition-colors"
                                     >
@@ -82,36 +82,36 @@ const Contact = () => {
                                 </div>
                             )}
 
-                            <form 
-                                action={endpoint} 
-                                method="POST" 
+                            <form
+                                action={endpoint}
+                                method="POST"
                                 onSubmit={handleSubmit}
                                 className="space-y-4"
                             >
                                 <div>
-                                    <input 
-                                        type="text" 
+                                    <input
+                                        type="text"
                                         name="name"
                                         required
-                                        placeholder="お名前" 
-                                        className="w-full px-4 py-3 bg-white/50 text-black border border-white/60 rounded-xl focus:outline-none focus:ring-2 focus:ring-secondary/50 placeholder-black/40" 
+                                        placeholder="お名前"
+                                        className="w-full px-4 py-3 bg-white/50 text-black border border-white/60 rounded-xl focus:outline-none focus:ring-2 focus:ring-secondary/50 placeholder-black/40"
                                     />
                                 </div>
                                 <div>
-                                    <input 
-                                        type="email" 
+                                    <input
+                                        type="email"
                                         name="email"
                                         required
-                                        placeholder="メールアドレス" 
-                                        className="w-full px-4 py-3 bg-white/50 text-black border border-white/60 rounded-xl focus:outline-none focus:ring-2 focus:ring-secondary/50 placeholder-black/40" 
+                                        placeholder="メールアドレス"
+                                        className="w-full px-4 py-3 bg-white/50 text-black border border-white/60 rounded-xl focus:outline-none focus:ring-2 focus:ring-secondary/50 placeholder-black/40"
                                     />
                                 </div>
                                 <div>
-                                    <textarea 
+                                    <textarea
                                         name="message"
                                         required
-                                        rows={4} 
-                                        placeholder="お問い合わせ内容" 
+                                        rows={4}
+                                        placeholder="お問い合わせ内容"
                                         className="w-full px-4 py-3 bg-white/50 text-black border border-white/60 rounded-xl focus:outline-none focus:ring-2 focus:ring-secondary/50 resize-none placeholder-black/40"
                                     ></textarea>
                                 </div>
@@ -123,8 +123,8 @@ const Contact = () => {
                                     </div>
                                 )}
 
-                                <button 
-                                    type="submit" 
+                                <button
+                                    type="submit"
                                     disabled={status === 'submitting'}
                                     className="w-full py-4 bg-secondary text-white font-bold rounded-xl shadow-md hover:bg-secondary-light transition-colors flex items-center justify-center space-x-2 disabled:opacity-70 disabled:cursor-not-allowed"
                                 >
