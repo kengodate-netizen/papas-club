@@ -30,7 +30,7 @@ const Footer = () => {
                             <a href="#" className="p-2 bg-white/10 rounded-full hover:bg-secondary transition-colors" aria-label="Instagram">
                                 <Camera size={20} />
                             </a>
-                            <a href="#" className="p-2 bg-white/10 rounded-full hover:bg-secondary transition-colors" aria-label="Official LINE">
+                            <a href="https://line.me/ti/p/3Lp00_1USt" target="_blank" rel="noopener noreferrer" className="p-2 bg-white/10 rounded-full hover:bg-secondary transition-colors" aria-label="Official LINE">
                                 <MessageCircle size={20} />
                             </a>
                             <a href="#" className="p-2 bg-white/10 rounded-full hover:bg-secondary transition-colors" aria-label="note">
