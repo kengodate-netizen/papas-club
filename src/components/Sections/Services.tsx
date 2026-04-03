@@ -41,9 +41,14 @@ const Services = () => {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
                     {servicesList.map((service, index) => (
-                        <div key={index} className="bg-white/40 backdrop-blur-md rounded-3xl p-8 shadow-xl border border-white/60 hover:bg-white/50 transition-all hover:-translate-y-1 flex flex-col">
+                        <div 
+                            key={index} 
+                            className={`bg-white/40 backdrop-blur-md rounded-3xl p-8 shadow-xl border border-white/60 hover:bg-white/50 transition-all hover:-translate-y-1 flex flex-col md:col-span-1 lg:col-span-2 ${
+                                servicesList.length === 5 && index === 3 ? 'lg:col-start-2' : ''
+                            }`}
+                        >
                             <div className="flex items-center mb-6">
                                 <div className="p-4 bg-white/60 rounded-2xl shadow-inner border border-white">
                                     {service.icon}
