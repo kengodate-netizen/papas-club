@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://papas-club.vercel.app/sitemap.xml
